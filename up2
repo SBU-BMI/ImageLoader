@@ -1,0 +1,1 @@
+java -cp ./QuIPUtils-2.0.0.jar edu.stonybrook.bmi.quiputils.ImageUploader -src /home/quip/quip_distro/images/brca_favorites/manifest.csv -collectionname "TCGA BRCA DEMO" -username admin -password bluecheese2018 -images /home/quip/quip_distro/images -host http://vinculum.bmi.stonybrookmedicine.edu
