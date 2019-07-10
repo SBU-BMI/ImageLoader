@@ -5,4 +5,5 @@ COPY QuIPUtils-2.0.0.jar /usr/bin
 COPY test.sh /usr/bin
 COPY up2 /usr/bin
 RUN chmod 0755 /usr/bin/test.sh
-CMD ["/bin/bash"]
+CMD ["sh", "/root/run.sh"]
+
