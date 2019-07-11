@@ -1,2 +1,2 @@
 #!/bin/bash
-java -cp /usr/bin/QuIPUtils-2.0.0.jar edu.stonybrook.bmi.quiputils.ImageUploader -images $QUIP_IMAGE_PATH -host http://localhost "$@"
+java -cp /usr/bin/QuIPUtils-2.0.0.jar edu.stonybrook.bmi.quiputils.ImageUploader -images $QUIP_IMAGE_PATH -host http://quip-pathdb "$@"
