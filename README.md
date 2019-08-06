@@ -7,6 +7,9 @@ Take a look at sample.csv in this repository for the required fields and format 
 ```
 docker exec -it quip-imageloader imageloader -src <full path to manifest file> -collectionname <my collection> -username <username> -password <password>
 ```
+
+The collection must be created before any images are loaded, otherwise, the loader will throw an error.
+
 Loading map files:
 
 Map files to be loaded must reside somewhere in the main QuIP data folder.  This folder must contain the appropriate manifest file.
