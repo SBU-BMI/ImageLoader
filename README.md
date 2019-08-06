@@ -9,6 +9,6 @@ docker exec -it quip-imageloader imageloader -src <full path to manifest file> -
 Loading map files:
 
 Map files to be loaded must reside somewhere in the main QuIP data folder.  This folder must contain the appropriate manifest file.
-
+<dl>
 docker exec -it quip-imageloader maploader -src <full path to manifest file> -collectionname <my collection> -username <username> -password <password> -type <TIL or Pyradiomics>
-
+</dl>
