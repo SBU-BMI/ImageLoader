@@ -1,6 +1,5 @@
 FROM openjdk:12-alpine
 LABEL authors="Erich Bremer"
-RUN apt-get -y update
 COPY run.sh /root
 COPY QuIPUtils-2.0.0.jar /usr/bin
 COPY imageloader /usr/bin
