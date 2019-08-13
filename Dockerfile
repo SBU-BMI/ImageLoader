@@ -1,5 +1,6 @@
-FROM openjdk:12-alpine
+FROM ubuntu:18.04
 LABEL authors="Erich Bremer"
+RUN apt-get install openjdk-8-jre
 COPY run.sh /root
 COPY QuIPUtils-2.0.0.jar /usr/bin
 COPY imageloader /usr/bin
