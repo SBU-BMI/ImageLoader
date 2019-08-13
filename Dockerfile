@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:12-alpine
 LABEL authors="Erich Bremer"
 RUN apt-get -y update
 COPY run.sh /root
