@@ -1,6 +1,7 @@
 FROM ubuntu:18.04
 LABEL authors="Erich Bremer"
 RUN apt-get update
+RUN apt-get install wget
 RUN wget https://download.java.net/java/GA/jdk12.0.2/e482c34c86bd4bf8b56c0b35558996b9/10/GPL/openjdk-12.0.2_linux-x64_bin.tar.gz
 RUN tar xvfz openjdk-12.0.2_linux-x64_bin.tar.gz
 RUN mkdir /usr/java
