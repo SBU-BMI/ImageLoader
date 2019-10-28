@@ -1,2 +1,2 @@
 #!/bin/bash
-java -cp /usr/bin/QuIPUtils-2.2.0.jar edu.stonybrook.bmi.quiputils.UploadMaps -quipdata $QUIP_DATA_PATH -host http://quip-pathdb "$@"
+java -cp /usr/bin/QuIPUtils-2.2.1.jar edu.stonybrook.bmi.quiputils.UploadMaps -quipdata $QUIP_DATA_PATH -host http://quip-pathdb "$@"
