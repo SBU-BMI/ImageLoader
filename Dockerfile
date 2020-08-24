@@ -13,5 +13,9 @@ COPY imageloader /usr/bin
 COPY maploader /usr/bin
 RUN chmod 0755 /usr/bin/imageloader
 RUN chmod 0755 /usr/bin/maploader
+
+RUN chgrp -R 0 /root && \
+    chmod -R g+rwX /root
+
 CMD ["sh", "/root/run.sh"]
 
