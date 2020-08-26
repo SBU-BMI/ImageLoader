@@ -17,5 +17,7 @@ RUN chmod 0755 /usr/bin/maploader
 RUN chgrp -R 0 /root && \
     chmod -R g+rwX /root
 
+USER 1001
+
 CMD ["sh", "/root/run.sh"]
 
