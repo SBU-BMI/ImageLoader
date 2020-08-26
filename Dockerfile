@@ -17,6 +17,10 @@ RUN chmod 0755 /usr/bin/maploader
 RUN chgrp -R 0 /root && \
     chmod -R g+rwX /root
 
+RUN mkdir -p /data/images && \
+	chgrp -R 0 /data && \
+    chmod -R g+rwX /data
+
 USER 1001
 
 CMD ["sh", "/root/run.sh"]
