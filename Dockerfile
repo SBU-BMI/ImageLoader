@@ -8,7 +8,7 @@ RUN mkdir /usr/java
 RUN mv jdk-12.0.2 /usr/java
 RUN ln -s /usr/java/jdk-12.0.2/bin/java /usr/bin/java
 COPY run.sh /root
-COPY QuIPUtils-2.2.3.jar /usr/bin
+COPY *.jar /usr/bin
 COPY imageloader /usr/bin
 COPY maploader /usr/bin
 RUN chmod 0755 /usr/bin/imageloader
