@@ -1,4 +1,4 @@
-# ImageLoader
+# QuIP ImageLoader
 
 Loading images:
 
