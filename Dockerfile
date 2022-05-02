@@ -1,12 +1,12 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 LABEL authors="Erich Bremer"
 RUN apt-get update
 RUN apt-get install -y wget
-RUN wget https://download.java.net/java/GA/jdk12.0.2/e482c34c86bd4bf8b56c0b35558996b9/10/GPL/openjdk-12.0.2_linux-x64_bin.tar.gz
-RUN tar xvfz openjdk-12.0.2_linux-x64_bin.tar.gz
+RUN wget https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz
+RUN tar xvfz jdk-17_linux-x64_bin.tar.gz
 RUN mkdir /usr/java
-RUN mv jdk-12.0.2 /usr/java
-RUN ln -s /usr/java/jdk-12.0.2/bin/java /usr/bin/java
+RUN mv jdk-17.0.3.1 /usr/java
+RUN ln -s /usr/java/jdk-17.0.3.1/bin/java /usr/bin/java
 COPY run.sh /root
 COPY *.jar /usr/bin
 COPY imageloader /usr/bin
